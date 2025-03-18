@@ -14,8 +14,8 @@ public class ArduinoRepository implements  ArduinoInterface {
 
   private SensorDataReceiver arduinoReceiver;
 
-  public ArduinoRepository(String portName) {
-    arduinoReceiver = new SensorDataReceiver(portName);
+  public ArduinoRepository() {
+    arduinoReceiver = new SensorDataReceiver("COM3");
   }
   @Override
   public SensorDataModel getAllAttributesFromArduino() {
