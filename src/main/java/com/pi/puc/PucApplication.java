@@ -26,7 +26,7 @@ public class PucApplication {
 		SpringApplication.run(PucApplication.class, args);
 	}
 
-	@Scheduled(fixedDelay = 10000)
+	@Scheduled(fixedDelay = 10000,)
 	public void startLoop() throws InterruptedException {
 		getArduinoData.getAndPersistArduinoData();
 	}
